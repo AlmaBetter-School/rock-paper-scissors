@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almabetter | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main class="main-container">
+    <!-- score container -->
+    <div class="top-container">
+      <div>
+        <h6 class="title">Rock</h6>
+        <h6 class="title">Paper</h6>
+        <h6 class="title">Scissor</h6>
+      </div>
+      <div class="score-card">
+        <p class="score-label">Score</p>
+        <p id="score-count">0</p>
+      </div>
+    </div>
+
+    <!-- user selection -->
+    <div class="game-container">
+      <div class="icon rock rock-position">
+        <img src="../assets/icon-rock.svg" alt="rock">
+      </div>
+      <div class="icon paper paper-position">
+        <img src="../assets/icon-paper.svg" alt="rock">
+      </div>
+      <div class="icon scissors scissors-position">
+        <img src="../assets/icon-scissors.svg" alt="rock">
+      </div>
+    </div>
+    
+    <!-- after user selection container -->
+    <div class="select-container">
+      <div id="player-pick-container">
+        <p class="pick-title">You picked</p>
+      </div>
+      <div class="result-container">
+        <p id="result-text">You Win</p>
+        <button class="btn-play-again">Play Again</button>
+      </div>
+      <div id="house-pick-container">
+        <p class="pick-title">The house picked</p>
+      </div>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
